@@ -1,0 +1,14 @@
+# Doxyfile 1.9.1
+
+DOXYFILE_ENCODING = UTF-8
+
+PROJECT_NAME = "TeLuMo"
+
+PROJECT_BRIEF = "Text game engine"
+
+OUTPUT_DIRECTORY = "docs/"
+
+INPUT = telumo.h telumo/Table.h telumo/Entity.h telumo/Scene.h \
+        samples/reflection.cpp
+
+EXAMPLE_PATH = samples/

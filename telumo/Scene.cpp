@@ -28,8 +28,8 @@ namespace telumo {
     }
 
     void Scene::render() {
-        charTable.vector.assign(height(), std::vector<chtype>(width()));
-        layerTable.vector.assign(height(), std::vector<size_t>(width()));
+        charTable = Table<chtype>(height(), width());
+        layerTable = Table<size_t>(height(), width());
         for (auto& entity : entities)
             renderEntity(entity);
     }
